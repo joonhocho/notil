@@ -1,2 +1,2 @@
 # notil
-Small utility library to be used in Node.js. Requires node packages.
+Small utility library written in TypeScript to be used in Node.js environment using Node packages.
