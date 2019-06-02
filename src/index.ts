@@ -1,4 +1,5 @@
 export * from './cryptoAes';
+export * from './encode';
 export * from './env';
 export * from './hash';
 export * from './http';
