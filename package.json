@@ -1,6 +1,6 @@
 {
   "name": "notil",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Small utility library written in TypeScript to be used in Node.js environment using Node packages",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -13,6 +13,7 @@
     "lint": "tslint -c ./tslint.json \"src/**/*\"",
     "lint:fix": "tslint --fix -c ./tslint.json \"src/**/*\"",
     "precommit": "yarn all",
+    "prepublish": "yarn all",
     "reinstall": "rm -rf ./node_modules yarn.lock && yarn",
     "start": "yarn test",
     "test": "jest",
@@ -52,6 +53,6 @@
     "typescript": "^3.5.1"
   },
   "dependencies": {
-    "ts-jutil": "^0.0.43"
+    "ts-jutil": "^0.0.45"
   }
 }
