@@ -1,6 +1,6 @@
 import { createCipheriv, createDecipheriv, randomBytes } from 'crypto';
 import { readFile, readFileSync, writeFile } from 'fs';
-import { promisify } from 'util';
+import { promisify } from './promisify';
 
 export type AesGcmAlgorithm = 'aes-128-gcm' | 'aes-192-gcm' | 'aes-256-gcm';
 export type AesCtrAlgorithm = 'aes-128-ctr' | 'aes-192-ctr' | 'aes-256-ctr';
