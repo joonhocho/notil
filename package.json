@@ -1,6 +1,6 @@
 {
   "name": "notil",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Small utility library written in TypeScript to be used in Node.js environment using Node packages",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -47,6 +47,7 @@
     "prettier": "^1.17.1",
     "ts-jest": "^24.0.2",
     "tscpaths": "^0.0.9",
+    "tsdef": "^0.0.6",
     "tslint": "^5.17.0",
     "tslint-config-airbnb": "^5.11.1",
     "tslint-config-prettier": "^1.18.0",
