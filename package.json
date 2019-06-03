@@ -1,6 +1,6 @@
 {
   "name": "notil",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Small utility library written in TypeScript to be used in Node.js environment using Node packages",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
