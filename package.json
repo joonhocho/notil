@@ -54,6 +54,6 @@
     "typescript": "^3.5.1"
   },
   "dependencies": {
-    "ts-jutil": "^0.0.46"
+    "ts-jutil": "^0.0.48"
   }
 }
