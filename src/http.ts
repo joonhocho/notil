@@ -6,16 +6,14 @@ export const getRequestQuery = (req: IncomingMessage): ParsedUrlQuery =>
   parse(req.url || '', true).query;
 
 export const getRequestBody = (req: IncomingMessage): Promise<Buffer> =>
-  new Promise(
-    (resolve, reject): void => {
-      const buffers: Buffer[] = [];
-      req.on('data', (chunk) => {
-        buffers.push(chunk);
-      });
-      req.on('end', () => resolve(Buffer.concat(buffers)));
-      req.on('error', reject);
-    }
-  );
+  new Promise((resolve, reject): void => {
+    const buffers: Buffer[] = [];
+    req.on('data', (chunk) => {
+      buffers.push(chunk);
+    });
+    req.on('end', () => resolve(Buffer.concat(buffers)));
+    req.on('error', reject);
+  });
 
 export const getRequestBodyJSON = <T>(
   req: IncomingMessage
