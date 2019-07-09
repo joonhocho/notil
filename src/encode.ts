@@ -1,4 +1,5 @@
-import { base64FromUrlSafe, base64ToUrlSafe } from 'ts-jutil/lib/base64';
+import { base64FromUrlSafe } from 'ts-jutil/dist/node/string/base64FromUrlSafe';
+import { base64ToUrlSafe } from 'ts-jutil/dist/node/string/base64ToUrlSafe';
 
 export const encodeBase64 = (
   str: string,

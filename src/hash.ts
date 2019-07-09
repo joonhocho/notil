@@ -1,5 +1,5 @@
 import { createHash } from 'crypto';
-import { base64ToUrlSafe } from 'ts-jutil/lib/base64';
+import { base64ToUrlSafe } from 'ts-jutil/dist/node/string/base64ToUrlSafe';
 
 export const getSha1Base64 = (s: string): string =>
   createHash('sha1')
