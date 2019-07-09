@@ -1,6 +1,6 @@
 {
   "name": "notil",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "Small utility library written in TypeScript to be used in Node.js environment using Node packages",
   "keywords": [
     "TypeScript",
@@ -60,7 +60,7 @@
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.5.2"
   },
-  "engines" : {
-    "node" : ">=8.0.0"
+  "engines": {
+    "node": ">=8.0.0"
   }
 }
