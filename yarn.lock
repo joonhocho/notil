@@ -401,10 +401,15 @@
   resolved "https://registry.npmjs.org/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
   integrity sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
 
-"@types/node@*", "@types/node@^12.0.12":
+"@types/node@*":
   version "12.6.1"
   resolved "https://registry.npmjs.org/@types/node/-/node-12.6.1.tgz#d5544f6de0aae03eefbb63d5120f6c8be0691946"
   integrity sha512-rp7La3m845mSESCgsJePNL/JQyhkOJA6G4vcwvVgkDAwHhGdq5GCumxmPjEk1MZf+8p5ZQAUE7tqgQRQTXN7uQ==
+
+"@types/node@^12.6.2":
+  version "12.6.2"
+  resolved "https://registry.npmjs.org/@types/node/-/node-12.6.2.tgz#a5ccec6abb6060d5f20d256fb03ed743e9774999"
+  integrity sha512-gojym4tX0FWeV2gsW4Xmzo5wxGjXGm550oVUII7f7G5o4BV6c7DBdiG1RRQd+y1bvqRyYtPfMK85UM95vsapqQ==
 
 "@types/stack-utils@^1.0.1":
   version "1.0.1"
@@ -3653,10 +3658,10 @@ ts-jest@^24.0.2:
     semver "^5.5"
     yargs-parser "10.x"
 
-ts-jutil@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.npmjs.org/ts-jutil/-/ts-jutil-1.0.2.tgz#db1cfa76a999e88450c2de05c21d02d293ce2249"
-  integrity sha512-pi3vhjxO2eh0sUexcgxnCH/53zRJMJfa6kpxtZfGYoUeBxws43NjjXZXgLfDPTjHWC+uBAc7sjC8+Voo6AD9CQ==
+ts-jutil@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.npmjs.org/ts-jutil/-/ts-jutil-1.0.4.tgz#5bfe017c77a226e56a0614c13ccd74568c0a61d6"
+  integrity sha512-4FN7WIpNtng02WYXz6jtfVRteztbTC4R8lvhNhdFISP9qoc8nUSZMcgRWV36cxqD4e7DL3tURKMCEla68RAoKw==
 
 tscpaths@^0.0.9:
   version "0.0.9"
@@ -3784,7 +3789,7 @@ typedarray@^0.0.6:
   resolved "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^3.5.2:
+typescript@^3.5.3:
   version "3.5.3"
   resolved "https://registry.npmjs.org/typescript/-/typescript-3.5.3.tgz#c830f657f93f1ea846819e929092f5fe5983e977"
   integrity sha512-ACzBtm/PhXBDId6a6sDJfroT2pOWt/oOnk4/dElG5G33ZL776N3Y6/6bKZJBFpd+b05F3Ct9qDjMeJmRWtE2/g==
