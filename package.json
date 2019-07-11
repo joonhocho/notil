@@ -1,6 +1,6 @@
 {
   "name": "notil",
-  "version": "0.0.23",
+  "version": "0.0.24",
   "description": "Small utility library written in TypeScript to be used in Node.js environment using Node packages",
   "keywords": [
     "TypeScript",
@@ -8,10 +8,21 @@
     "library",
     "Node.js"
   ],
+  "author": "Joon Ho Cho",
+  "license": "MIT",
+  "homepage": "https://github.com/joonhocho/notil#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joonhocho/notil.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joonhocho/notil/issues"
+  },
   "module": "lib/index.js",
   "main": "dist/node/index.js",
   "browser": "dist/browser/index.js",
   "types": "lib/index.d.ts",
+  "sideEffects": false,
   "scripts": {
     "all": "npm run clean && npm run format && npm run lint:fix && npm run build:all && npm run test",
     "build:all": "npm run build:module && npm run build:node && npm run build:browser",
@@ -32,18 +43,11 @@
     "test:watch": "jest --watch"
   },
   "pre-commit": "precommit",
-  "author": "Joon Ho Cho",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/joonhocho/notil.git"
-  },
-  "bugs": {
-    "url": "https://github.com/joonhocho/notil/issues"
-  },
-  "homepage": "https://github.com/joonhocho/notil#readme",
   "dependencies": {
-    "ts-jutil": "^1.0.6"
+    "ts-jutil": "^1.0.9"
+  },
+  "peerDependencies": {
+    "tslib": "^1.10.0"
   },
   "devDependencies": {
     "@types/jest": "^24.0.15",
@@ -54,17 +58,13 @@
     "prettier": "^1.18.2",
     "ts-jest": "^24.0.2",
     "tscpaths": "^0.0.9",
-    "tsdef": "^0.0.9",
+    "tsdef": "^0.0.13",
     "tslint": "^5.18.0",
     "tslint-config-airbnb": "^5.11.1",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.5.3"
   },
-  "peerDependencies": {
-    "tslib": "^1.10.0"
-  },
   "engines": {
     "node": ">=8.0.0"
-  },
-  "sideEffects": false
+  }
 }
