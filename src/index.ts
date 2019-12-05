@@ -15,7 +15,7 @@ export {
   encodeBase64,
   encodeBase64UrlSafe,
 } from './encode';
-export { env } from './env';
+export { env, envMap, envs } from './env';
 export { getSha1Base64, getSha1Base64UrlSafe } from './hash';
 export { getRequestBody, getRequestBodyJSON, getRequestQuery } from './http';
 export { promisify } from './promisify';
