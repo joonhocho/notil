@@ -1,6 +1,6 @@
 {
   "name": "notil",
-  "version": "0.0.28",
+  "version": "0.0.29",
   "description": "Small utility library written in TypeScript to be used in Node.js environment using Node packages",
   "keywords": [
     "TypeScript",
@@ -25,8 +25,10 @@
   "sideEffects": false,
   "scripts": {
     "all": "npm run clean && npm run format && npm run lint:fix && npm run build:all && npm run test",
+    "all:index": "npm run clean && npm run build:index && npm run format && npm run lint:fix && npm run build:all && npm run test",
     "build:all": "npm run build:module && npm run build:node && npm run build:browser",
     "build:browser": "tsc -p ./tsconfig.browser.json && tscpaths -p ./tsconfig.browser.json -s ./src -o ./dist/browser",
+    "build:index": "tstf genIndex -o src/index.ts -w",
     "build:module": "tsc -p ./tsconfig.module.json && tscpaths -p ./tsconfig.module.json -s ./src -o ./lib",
     "build:node": "tsc -p ./tsconfig.node.json && tscpaths -p ./tsconfig.node.json -s ./src -o ./dist/node",
     "clean": "rm -rf ./lib ./dist ./coverage",
@@ -34,7 +36,7 @@
     "lint": "tslint -c ./tslint.json \"src/**/*.ts\"",
     "lint:fix": "tslint --fix -c ./tslint.json \"src/**/*.ts\"",
     "precommit": "npm run all",
-    "prepublishOnly": "npm run all",
+    "prepublishOnly": "npm run all:index",
     "reinstall": "rm -rf ./node_modules ./package-lock.json ./yarn.lock && yarn",
     "start": "npm run test",
     "test": "jest",
