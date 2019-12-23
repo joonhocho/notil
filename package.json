@@ -1,6 +1,6 @@
 {
   "name": "notil",
-  "version": "0.0.29",
+  "version": "0.0.30",
   "description": "Small utility library written in TypeScript to be used in Node.js environment using Node packages",
   "keywords": [
     "TypeScript",
@@ -46,14 +46,14 @@
   },
   "pre-commit": "precommit",
   "dependencies": {
-    "ts-jutil": "^1.0.21"
+    "ts-jutil": "^1.0.23"
   },
   "peerDependencies": {
     "tslib": "^1.10.0"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.23",
-    "@types/node": "^12.12.14",
+    "@types/jest": "^24.0.24",
+    "@types/node": "^12.12.21",
     "coveralls": "^3.0.9",
     "jest": "^24.9.0",
     "pre-commit": "^1.2.2",
@@ -64,7 +64,7 @@
     "tslint": "^5.20.1",
     "tslint-config-airbnb": "^5.11.2",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.7.3"
+    "typescript": "^3.7.4"
   },
   "engines": {
     "node": ">=8.0.0"
