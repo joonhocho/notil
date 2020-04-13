@@ -1,5 +1,6 @@
 import { env, envMap, envs } from './env';
 
+// tslint:disable typedef
 test('env', () => {
   expect(() => env('UNKNOWN')).toThrowError('undefined');
 

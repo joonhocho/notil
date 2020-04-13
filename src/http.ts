@@ -2,6 +2,7 @@ import { IncomingMessage } from 'http';
 import { ParsedUrlQuery } from 'querystring';
 import { parse } from 'url';
 
+// tslint:disable typedef
 export const getRequestQuery = (req: IncomingMessage): ParsedUrlQuery =>
   parse(req.url || '', true).query;
 

@@ -5,6 +5,7 @@ import {
   encodeBase64UrlSafe,
 } from './encode';
 
+// tslint:disable typedef
 test('encodeBase64 / decodeBase64', () => {
   const str = 'text to encode !@#!$!@$UEU';
 

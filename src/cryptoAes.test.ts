@@ -10,6 +10,7 @@ import {
   encryptAesGcmFile,
 } from './cryptoAes';
 
+// tslint:disable typedef
 test('encryptAesGcm / decryptAesGcm', async () => {
   const raw = 'this is file content \n#@!$!@$%@#$$';
   const algorithm = 'aes-256-gcm';

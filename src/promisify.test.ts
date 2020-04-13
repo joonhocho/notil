@@ -1,5 +1,6 @@
 import { promisify } from './promisify';
 
+// tslint:disable typedef
 test('promisify', async () => {
   const square = promisify(
     (x: number, cb: (e: Error | null, res: number | null) => void): void => {

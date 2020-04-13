@@ -1,6 +1,7 @@
 import { Readable } from 'stream';
 import { getRequestBody, getRequestBodyJSON, getRequestQuery } from './http';
 
+// tslint:disable typedef
 test('getRequestBody', () => {
   expect(
     getRequestQuery({ url: 'http://example.com?a=1&b=&c#hash' } as any)

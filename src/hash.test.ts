@@ -1,5 +1,6 @@
 import { getSha1Base64, getSha1Base64UrlSafe } from './hash';
 
+// tslint:disable typedef
 test('getSha1Base64', () => {
   expect(getSha1Base64('')).toBe('2jmj7l5rSw0yVb/vlWAYkK/YBwk=');
   expect(getSha1Base64('a')).toBe('hvfkN/qlp/zhXR3cuerq6jd2Z7g=');
